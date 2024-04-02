@@ -8,3 +8,7 @@
 6	2769	7337892097869391	CMakeFiles/webserver.dir/srcs/main.cpp.obj	f83de0efda93add8
 9	2771	7337892097879398	CMakeFiles/webserver.dir/srcs/sockets/WebServer.cpp.obj	6c17b48ea459d7f2
 2784	2921	7337892099336224	webserver.exe	93f8bb99ef9e8fde
+10	2574	7337901536023232	CMakeFiles/webserver.dir/srcs/sockets/WebServer.cpp.obj	6c17b48ea459d7f2
+2575	2716	7337901537407038	webserver.exe	93f8bb99ef9e8fde
+9	2517	7337902518361667	CMakeFiles/webserver.dir/srcs/sockets/WebServer.cpp.obj	6c17b48ea459d7f2
+2518	2665	7337902519778116	webserver.exe	93f8bb99ef9e8fde
