@@ -1,0 +1,10 @@
+# ninja log v5
+1	171	7337892069827878	build.ninja	6c48282bfd7e7ab6
+14	2719	7337874771348351	CMakeFiles/webserver.dir/srcs/main.cpp.obj	f83de0efda93add8
+2729	2871	7337874772809046	webserver.exe	f431905f042e2dc0
+8	2729	7337874771458390	CMakeFiles/webserver.dir/srcs/sockets/SocketListener.cpp.obj	1fb1a1309dcc185d
+9	2716	7337868772358213	CMakeFiles/webserver.dir/srcs/sockets/MultiClient.cpp.obj	17337b041417521f
+2	178	7337892069827878	build.ninja	6c48282bfd7e7ab6
+6	2769	7337892097869391	CMakeFiles/webserver.dir/srcs/main.cpp.obj	f83de0efda93add8
+9	2771	7337892097879398	CMakeFiles/webserver.dir/srcs/sockets/WebServer.cpp.obj	6c17b48ea459d7f2
+2784	2921	7337892099336224	webserver.exe	93f8bb99ef9e8fde
