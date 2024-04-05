@@ -6,6 +6,12 @@ bool SocketListener::init() {
     if (sockets == -1)
         return false;
 
+    int optval = 1;
+    if (setsockopt(sockets, SOL_SOCKET, SO_REUSEADDR, &optval, sizeof(optval)) == -1) {
+        close(sockets);
+        return false;
+    }
+
     addr_in.sin_family = AF_INET;
     addr_in.sin_port = htons(port);
     inet_pton(AF_INET, ip, &addr_in.sin_addr);
@@ -30,16 +36,15 @@ bool SocketListener::run() {
 //                max_fd = std::max(max_fd, fd);
 //            }
 //        }
-        std::cout << "hi" << std::endl;
+//        if (max_fd == -1)
+//            ;
+//        else
+//            max_fd += 1;
         for (int fd = 0; fd < FD_SETSIZE; ++fd) {
             if (FD_ISSET(fd, &copy) && fd > max_fd) {
                 max_fd = fd;
             }
         }
-//        if (max_fd == -1)
-//            ;
-//        else
-//            max_fd += 1;
         max_fd += 1;
         int socketCount = select(max_fd, &copy, NULL, NULL, NULL);
         if (socketCount == -1) {
@@ -78,10 +83,4 @@ bool SocketListener::run() {
 
 void SocketListener::sendToClient(int client, const char* msg, int length) {
     send(client, msg, length, 0);
-}
-
-void SocketListener::broadcastToClients(int sendingClient, const char* msg, int length) {
-    (void)sendingClient;
-    (void)msg;
-    (void)length;
 }

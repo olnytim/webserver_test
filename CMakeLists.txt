@@ -5,5 +5,5 @@ set(CMAKE_CXX_STANDARD 98)
 
 add_executable(webserver srcs/main.cpp
         srcs/sockets/SocketListener.cpp
-        srcs/sockets/WebServer.cpp)
-target_link_libraries(webserver Ws2_32.lib)
+        srcs/sockets/WebServer.cpp
+        srcs/utils/util.cpp)

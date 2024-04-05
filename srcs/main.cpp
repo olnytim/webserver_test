@@ -1,5 +1,4 @@
 #include "../includes/sockets/WebServer.hpp"
-#include <cstdlib>
 
 int main()
 {
