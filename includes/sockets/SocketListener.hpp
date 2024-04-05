@@ -1,16 +1,17 @@
 #pragma once
 
-// windows implementation
-#include <iostream>
-#include <WS2tcpip.h>
-#include <string>
-#include <sstream>
+//// windows implementation
+//#include <iostream>
+//#include <WS2tcpip.h>
+//#include <string>
+//#include <sstream>
 
 // linux implementation
-//#include <sys/socket.h>
-//#include <netinet/in.h>
-//#include <arpa/inet.h>
-//#include <unistd.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <unistd.h>
+#include <cstring>
 
 class SocketListener
 {
